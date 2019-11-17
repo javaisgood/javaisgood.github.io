@@ -18,21 +18,73 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: "jswdwsx 的超棒的网站"
+subtitle: "version 1.0"
+email: uptothemoon520@outlook.com
+name: "jyw"
+
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  没错，这就是jswdwsx 的超棒的网站
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://localhost:4000/"
+repository: "username/repo-name"
+teaser: "/assets/images/bio-photo.jpeg"
+logo: "/assets/images/logo-small.png"
+masthead_title: "锦瑟无端五十弦"
+breadcrumbs: true
+read_time: true
+words_per_minute: 250
+atom_feed:
+  path: "http://feeds.feedburner.com/youFeedname"
+search: true
+
+
+author:
+  name: "jyw"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "I am an **amazing** person." # Note: Markdown is allowed
+  location: "Hangzhou"
+  links:
+  - label: "jswdwsx"
+    icon: "fas fa-fw fa-link"
+    url: "https://mademistakes.com"
+  - label: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: "https://twitter.com/uptothemoon520"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/javaisgood"
+  - label: "Instagram"
+    icon: "fab fa-fw fa-instagram"
+    url: "https://www.instagram.com/farwalkhighfly/"
+
+
+footer:
+  links:
+  - label: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: "https://twitter.com/uptothemoon520"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/javaisgood"
+  - label: "Instagram"
+    icon: "fab fa-fw fa-instagram"
+    url: "https://www.instagram.com/farwalkhighfly/"
+
+
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+include: ["_pages"]
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +105,24 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+defaults:
+# _posts
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: true
+    share: true
+    related: true
+# _pages
+- scope:
+    path: ""
+    type: pages
+  values:
+    layout: single
+    author_profile: true
