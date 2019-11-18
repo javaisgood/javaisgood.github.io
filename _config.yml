@@ -21,7 +21,7 @@
 title: "jswdwsx 的超棒的网站"
 subtitle: "version 1.0"
 email: uptothemoon520@outlook.com
-name: "jyw"
+name: "锦瑟无端五十弦"
 
 description: >- # this means to ignore newlines until "baseurl:"
   没错，这就是jswdwsx 的超棒的网站
@@ -44,11 +44,11 @@ author:
   name: "jyw"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "I am an **amazing** person." # Note: Markdown is allowed
-  location: "Hangzhou"
+  location: "杭州"
   links:
   - label: "jswdwsx"
     icon: "fas fa-fw fa-link"
-    url: "https://mademistakes.com"
+    url: "http://www.jswdwsx.com"
   - label: "Twitter"
     icon: "fab fa-fw fa-twitter-square"
     url: "https://twitter.com/uptothemoon520"
@@ -81,6 +81,7 @@ include: ["_pages"]
 # Build settings
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+locale: zh-CN
 
 plugins:
   - jekyll-feed
